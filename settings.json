@@ -23,6 +23,7 @@
     "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "32768",
     "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "131072",
     "CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT": "1",
+    "CLAUDE_CODE_ENABLE_AUTO_MODE": "0",
     "DISABLE_PROMPT_CACHING": "1",
     "DISABLE_TELEMETRY": "1",
     "DISABLE_ERROR_REPORTING": "1"
@@ -60,6 +61,13 @@
       "Bash(awk *)",
       "Bash(xargs *)",
       "Bash(tee *)",
+      "Bash(g++ *)",
+      "Bash(gcc *)",
+      "Bash(make *)",
+      "Bash(cmake *)",
+      "Bash(ctest *)",
+      "Bash(./test_lru_cache *)",
+      "Bash(./test_lru_cache)",
       "Read",
       "Edit",
       "Write",
@@ -72,6 +80,7 @@
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(./secrets/**)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   }
 }
